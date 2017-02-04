@@ -34,16 +34,42 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FTs-Pk-0vc"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xjV-7y-JN2">
+                                <rect key="frame" x="137.5" y="170.5" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="uiW-um-MkK"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PrR-2t-ZGe">
+                                <rect key="frame" x="137.5" y="220.5" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="d8J-0P-STl"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="xjV-7y-JN2" firstAttribute="top" secondItem="hA5-ng-b8O" secondAttribute="bottom" constant="20" id="1dI-ra-bz1"/>
+                            <constraint firstItem="xjV-7y-JN2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6OG-sk-QWM"/>
                             <constraint firstItem="keX-29-bzL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="Add-jX-Xsh"/>
                             <constraint firstItem="hA5-ng-b8O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OcH-PO-bLU"/>
+                            <constraint firstItem="PrR-2t-ZGe" firstAttribute="top" secondItem="xjV-7y-JN2" secondAttribute="bottom" constant="20" id="QcA-TZ-K5F"/>
+                            <constraint firstItem="PrR-2t-ZGe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tyu-eX-b2R"/>
                             <constraint firstItem="keX-29-bzL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cgH-Jp-z33"/>
                             <constraint firstItem="hA5-ng-b8O" firstAttribute="top" secondItem="keX-29-bzL" secondAttribute="bottom" constant="30" id="uvY-ec-K5b"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="Text1" destination="xjV-7y-JN2" id="idd-bA-4aF"/>
+                        <outlet property="Text2" destination="PrR-2t-ZGe" id="58P-Sz-yaS"/>
+                        <outlet property="TextOne" destination="xjV-7y-JN2" id="w8U-z6-nej"/>
+                        <outlet property="TextTwo" destination="Tyu-eX-b2R" id="I9G-Jm-bxi"/>
                         <outlet property="theLabel" destination="keX-29-bzL" id="yIf-i5-Edm"/>
                     </connections>
                 </viewController>
